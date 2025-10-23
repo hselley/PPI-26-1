@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de formularios</title>
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+    <h1>Registro de usuarios</h1>
+    <h1>Ingrese sus datos</h1>
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="passwd">Password:</label><br>
+        <input type="password" name="passwd" id="passwd"><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br>
+        <input type="radio" name="gender" id="unknown">
+        <label for="unknown">I prfer not to say</label>
+    </form>
+    <button type="button" onclick="user()">Send</button>
+    <p id="resultado"></p>
+</body>
+</html>

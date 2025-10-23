@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox</title>
+  <script type="text/javascript" src="js/extraerCheckbox.js"></script>
+</head>
+<body>
+  <h1>Medio transporte</h1>
+  <p>Seleccione su medio de transporte predilecto.</p>
+  <form action="">
+    <input type="checkbox" name="transporte" value="Automovil" id="auto">
+    <label for="auto">Automóvil</label> 
+    <br>
+    <input type="checkbox" name="transporte" value="Motocicleta" id="moto">
+    <label for="moto">Motocicleta</label>
+    <br>
+    <input type="checkbox" name="transporte" value="Bicicleta" id="bici">
+    <label for="bici">Bicicleta</label>
+    <br>
+    <input type="checkbox" name="transporte" value="Transporte Público" id="trans">
+    <label for="trans">Transporte Público</label>
+    <br>
+    <input type="checkbox" name="transporte" value="Otro" id="otro">
+    <label for="otro">Otro</label>
+  </form>
+  <button onclick="proceso3()">Enviar</button>
+  <p id="resultado"></p>
+</body>
+</html>    

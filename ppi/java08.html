@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <script type="text/javascript" src="js/extraer.js"></script>
+</head>
+<body>
+    <h1>Formulario tipo Radio</h1>
+    <p>Extracción de valor del imput tipo radio</p>
+    <h2>Elija su genero:</h2>
+    <form action="">
+    <label for="mas">Masculino:</label>
+    <input type="radio" name="genero" value="Masculino" id="mas"> <br>
+    <label for="fem">Femenino:</label> 
+    <input type="radio" name="genero" value="Femenino" id="fem"> <br>
+    <label for="lgbti">LGBTI:</label>
+    <input type="radio" name="genero" value="LGBTI" id="lgbti"> <br>
+    <label for="none">Ninguno:</label>
+    <input type="radio" name="genero" value="Ninguno" id="none"> <br>
+    <label for="otro">Otro: </label>
+    <input type="radio" name="genero" value="Otro" id="otro"> <br>
+    </form>
+    <button onclick="extraccion2()">Seleccionar</button>
+    <p id="resultado"></p>
+</body>
+</html>

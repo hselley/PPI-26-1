@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de videojuegos</title>
+    <link rel="stylesheet" href="tablas.css">
+    <script src="js/resgistroJuegos.js"></script>
+    <style>
+        body {
+            background: #d4a9a9;
+            margin: 50px auto 50px auto;
+            width: 700px;
+        }
+        h1 {
+            color: gray;
+            border: 1px solid white;
+            font-family: Helvetica, sans-serif;
+            padding: 10px;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de videojuegos</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre"> <br>
+        <label for="publisher">Publisher:</label>
+        <input type="text" name="publisher" id="publisher"> <br>
+        <h3>Consola/Plataforma</h3>
+        <input type="checkbox" name="consola" id="steam" value="Steam">
+        <label for="steam">Steam</label> <br>
+        <input type="checkbox" name="consola" id="xbox" value="XBox Series S/X">
+        <label for="xbox">XBox Series S/X</label> <br>
+        <input type="checkbox" name="consola" id="ps5" value="Playstation 5">
+        <label for="ps5">Playstation 5</label><br>
+        <input type="checkbox" name="consola" id="switch" value="Nintendo Switch / Switch 2">
+        <label for="switch">Nintendo Switch / Switch 2</label>
+        <h3>Medio</h3>
+        <input type="radio" name="medio" id="fisico" value="Juego físico"> 
+        <label for="fisico">Juego físico</label> <br>
+        <input type="radio" name="medio" id="digital" value="Juego digital"> 
+        <label for="digital">Juego digital</label> <br> <br>
+        <label for="fecha">Fecha de adquisición</label>
+        <input type="date" name="fecha" id="fecha">
+    </form>
+    <button type="button" onclick="juego()">Registro</button>
+    <h2>Juegos registrados</h2>
+    <table id="consolas"></table>
+</body>
+</html>
