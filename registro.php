@@ -17,6 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registo</title>
+    <link rel="stylesheet" href="estiloRegistro.css">
 </head>
 <body>
     <h1>Registro de usuarios</h1>
